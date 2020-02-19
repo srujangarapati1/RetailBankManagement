@@ -1,0 +1,106 @@
+@CHARSET "ISO-8859-1";
+header{
+	width:100%;
+	font-family:Palatino Linotype;
+	align:center;
+	color: #000000;
+	border-radius: 12px;
+	font-size: 20px;
+	font-weight: bold;
+	background-image: url("image2.png");
+	 /* background-repeat: no-repeat; */
+    /* background-size: 1390px 600px; */
+    padding: 8px;
+}
+footer{
+	
+	margin-top:30px;
+	width:100%;
+	margin-left:10px;
+	color: white;
+	border-radius: 12px;
+}
+.button{
+     background-color: #008822; /* Green */
+    border: none;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    font-style: normal;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    width:relative;
+   
+    
+}
+.button:hover {
+    background-color: black;
+    color: #000000;
+}
+input[type=text], select {
+    width: 20%;
+  
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    box-sizing: border-box;
+}
+input[type=password], select {
+    width: 20%;
+   
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+.fieldset
+{
+	text-align:center;
+	
+	align:center;
+	border:2px solid black;
+	width:30%;
+	background-color: #D9D1D1;
+	border-radius: 12px;
+	text-aligh:center;
+}
+.th
+{
+	align:left;
+}
+
+html { 
+    background: url(background1.jpg) no-repeat center center fixed #000; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+ul{
+	
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #008040;
+	
+	
+}
+li{
+	float:right;
+}
+.a
+{
+	font-size: 20px;
+	color:#800000;
+	font-style: italic;
+}

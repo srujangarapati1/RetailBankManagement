@@ -1,0 +1,221 @@
+@CHARSET "ISO-8859-1";
+header{
+	top:0;
+	width:100%;
+	font-family:Palatino Linotype;
+	align:center;
+	color: #000000;
+	border-radius: 12px;
+	font-size: 20px;
+	font-weight: bold;
+	background-image: url("image2.png");
+	 /* background-repeat: no-repeat; */
+    /* background-size: 1390px 600px; */
+    padding: 8px;
+}
+footer{
+	
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: left;
+	
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+ 
+input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit]:hover
+{
+	background-color:#000000;
+}
+input[type=submit],select
+{
+	background-color:#575757;
+}
+
+.fieldset
+{
+	text-align:center;
+	margin-top:60px;
+	align:center;
+	border:2px solid black;
+	width:30%;
+	background-color: #9b9b9b;
+	border-radius: 12px;
+	text-aligh:center;
+}
+.fieldset1
+{
+	text-align:center;
+	margin-top:-75px;
+	align:center;
+	border:2px solid black;
+	width:30%;
+	background-color: #9b9b9b;
+	border-radius: 12px;
+	text-aligh:center;
+}
+.fieldset2
+{
+	text-align:center;
+	margin-top:-75px;
+	align:center;
+	border:2px solid black;
+	width:30%;
+	background-color: #9b9b9b;
+	border-radius: 12px;
+	text-aligh:center;
+}
+.fieldset3
+{
+	text-align:center;
+	margin-top:-10px;
+	align:center;
+	border:2px solid black;
+	width:30%;
+	background-color: #9b9b9b;
+	border-radius: 12px;
+	text-aligh:center;
+}
+.fieldset4
+{
+	text-align:center;
+	margin-top:-100px;
+	align:center;
+	border:2px solid black;
+	width:30%;
+	background-color: #9b9b9b;
+	border-radius: 12px;
+	text-aligh:center;
+}
+.th
+{
+	align:left;
+}
+html { 
+    background: url(background1.jpg) no-repeat center center fixed #000; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+ul {
+	
+	
+	float:none;
+	position:sticky;
+	top:0;
+	width:100%;
+	align:left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #575757;
+    border-radius: 12px;
+}
+
+li {
+    float: left;
+    border-left:1px solid #bbb;
+    border-right:1px solid #bbb;
+}
+
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+.container .btn {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container .btn:hover {
+    background-color: black;
+    color: white;
+}
+.container .btn1 {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+.container .btn1:hover {
+    background-color: black;
+    color: white;
+}
+.button 
+{
+     background-color: #008822; /* Green */
+    border: none;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-style: normal;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    width:relative;
+  
+    
+}
+.a
+{
+	font-size: 20px;
+	color:#000093;
+	font-style: italic;
+}

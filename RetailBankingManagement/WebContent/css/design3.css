@@ -1,0 +1,102 @@
+
+header{
+	width:100%;
+	font-family:Palatino Linotype;
+	align:center;
+	color: #000000;
+	border-radius: 12px;
+	font-size: 20px;
+	font-weight: bold;
+	background-image: url("image2.png");
+	 /* background-repeat: no-repeat; */
+    /* background-size: 1390px 600px; */
+    padding: 8px;
+}
+
+footer{
+	
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: left;
+	
+}
+.button 
+{
+     background-color: #008822; /* Green */
+    border: none;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-style: normal;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    width:relative;
+  
+    
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]:hover
+{
+	background-color:#45a049;
+}
+.fieldset
+{
+	text-align:center;
+	align:center;
+	width:100%;
+	padding:20px;
+	background-color: #9b9b9b;
+	border-radius: 12px;
+	text-aligh:center;
+}
+.th
+{
+	align:left;
+}
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid grey;
+    padding:20px;
+}
+html { 
+    background: url(background1.jpg) no-repeat center center fixed #000; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+.a
+{
+	font-size: 20px;
+	color:#800000;
+	font-style: italic;
+}
