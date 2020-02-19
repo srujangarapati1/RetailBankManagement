@@ -1,0 +1,16 @@
+spring:
+    datasource:
+        hikari:
+            connection-test-query: SELECT 1 FROM DUAL
+            minimum-idle: 1
+            maximum-pool-size: 5
+            pool-name: yourPoolName
+            auto-commit: false
+        driver-class-name: oracle.jdbc.driver.OracleDriver
+        url: jdbc:oracle:thin:@localhost:1521:XE
+        username: SYSTEM
+        password: password
+        type: com.zaxxer.hikari.HikariDataSource  
+   
+hibernate:
+              dialect: org.hibernate.dialect.OracleDialect
