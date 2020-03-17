@@ -1,0 +1,40 @@
+<div  ng-controller="viewByController">
+
+<!-- <form >
+<table border="0">
+
+			<tr>
+               		<td>Customer Id</td>
+               		<td><input type="number" ng-model="accForm.customerId" required/></td>
+            </tr>
+		<tr>
+               		<td colspan="2">
+                  <a href="#!viewByCustIdDisplay" ng-click="viewBy(accForm.customerId)" ><input type="submit" value="Submit" class="blue-button" /></a>
+               </td>
+         </tr>
+
+</table>
+</form> -->
+<form name="myForm" class="card container-fluid shadow mt-5"
+		style="width: 50%; background-color: aliceblue">
+		<h2 class="text-center card-header">View By Customer Id</h2>
+		<div class="form-row mt-4">
+			<div class="form-group col-md-auto mt-3 ml-auto">
+				<label for="inputNumber">Customer Id</label>
+			</div>
+			<div class="form-group col-md-auto mr-auto">
+				<input type="text" class="form-control" id="inputNumaber"
+					ng-model="accForm.customerId" required><br>
+			</div>
+		</div>
+		<div class="form-row">
+		<div class="form-group col-md-7 ml-auto">
+		<a href="#!viewByCustIdDisplay"  class="center">
+		<button
+				type="submit" ng-click="viewBy(accForm.customerId)"
+				
+				class="btn btn-primary mb-4 ml-5 mr-5 align-middle">Search</button></a>
+		</div>
+		</div>
+	</form>
+</div>

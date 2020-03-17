@@ -1,0 +1,31 @@
+<div   ng-controller="viewAllCustDisplayController">
+
+
+     <table border="1" align="center" class=" table table-striped mt-5" style="width: 70%; background-color: aliceblue">
+	<thead>
+         <tr>
+            <th scope="col">Customer Id</th>
+            <th scope="col">Account Id</th>
+            <th scope="col">Account Type</th>
+            <th scope="col">Balance</th>
+            <th scope="col">Delete</th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr ng-repeat="account in acc">
+         	<th scope="row">{{account.customerId }}</th>
+            <td > {{account.accountId }}</td>
+            <td> {{account.accountType}}</td>
+             <td >{{account.balance}}</td>
+             <td>
+            <a ng-click="deleteAccount(account)" class="btn btn-danger" style="color: white;">Delete</a>
+            </td>
+         </tr>
+         </tbody>
+            </table>
+     <center><h4>{{message}}</h4></center>
+</div>
+
+
+
+

@@ -1,0 +1,48 @@
+<div   ng-controller="viewTransByCustIdDisplayController">
+
+
+<!-- <table border="1">
+         <tr>
+            <th>Transaction Id</th>
+            <th>Account Id</th>
+            <th>Amount</th>
+            <th>Status</th>
+            <th>Timestamp</th>
+            
+         </tr>
+        
+         <tr ng-repeat="trans in transaction">
+            <td > {{trans.transId }}</td>
+            <td > {{trans.accId }}</td>
+            <td> {{trans.amount}}</td>
+            <td>{{trans.status}}</td>
+            <td>{{trans.timeStamp}}</td>
+            
+         </tr>
+     </table> -->
+        <table border="1" align="center" class=" table table-striped mt-5" style="width: 70%; background-color: aliceblue">
+	<thead>
+         <tr>
+            <th scope="col">Transaction Id</th>
+            <th scope="col">Account Id</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Status</th>
+            <th scope="col">Timestamp</th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr  ng-repeat="trans in transaction">
+         	<th scope="row"> {{trans.transId }}</th>
+            <td > {{trans.accId }}</td>
+            <td> {{trans.amount}}</td>
+            <td>{{trans.status}}</td>
+            <td>{{trans.timeStamp}}</td>
+         </tr>
+         </tbody>
+            </table>
+     
+</div>
+
+
+
+

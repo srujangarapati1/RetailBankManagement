@@ -1,0 +1,59 @@
+<div  ng-controller="updateController">
+
+			<form ng-submit="updateCust()" class="card container-fluid shadow mt-5" style="width:70%;background-color:aliceblue">
+		<h2 class="text-center card-header" >Update Customer</h2>
+		<div class="form-row mt-4">
+			<div class="form-group col-md-6">
+				<label for="inputNumber">SSN Id</label> <input type="number"
+					class="form-control" id="inputNumber" ng-model="customerForm.ssnId"
+					readonly>
+			</div>
+			<div class="form-group col-md-6">
+				<label for="inputNumber">Customer Id</label> <input type="number"
+					class="form-control" ng-model="customerForm.customerId"
+					id="inputNumber" readonly>
+			</div>
+		</div>
+		<div class="form-row mt-4">
+			<div class="form-group col-md-6">
+				<label for="inputName">Customer Name</label> <input type="text"
+					class="form-control" ng-model="customerForm.customerName" id="inputName">
+			</div>
+			<div class="form-group col-md-3">
+				<label for="inputNumber">Age</label> <input type="number"
+					class="form-control" ng-model="customerForm.age" id="inputNumber">
+			</div>
+			<div class="form-check col-md-3">
+				<label for="exampleText"> Gender </label>
+				<input class="form-control" ng-model="customerForm.gender"
+					type="text" id="exampleText" readonly> 
+			</div>
+		</div>
+		<div class="form-row mt-4">
+			<div class="form-group col-md-6">
+				<label for="inputTel">Mobile No</label> <input type="tel"
+					class="form-control" id="inputTel" ng-model="customerForm.mobile"
+					>
+			</div>
+			<div class="form-group col-md-6">
+				<label for="inputAddress2">Address 2</label> <input type="text"
+					class="form-control" ng-model="customerForm.address" required
+					id="inputAddress2">
+			</div>
+		</div>
+		<div class="form-row mt-4">
+			<div class="form-group col-md-6">
+				<label for="inputText">City</label> <input type="text"
+					class="form-control" id="inputText" ng-model="customerForm.city"
+					>
+			</div>
+			<div class="form-group col-md-6">
+				<label for="inputEmail4">Email</label> <input type="email" ng-model="customerForm.gmail" 
+					class="form-control" id="inputEmail4">
+			</div>
+		</div>
+
+		<button type="submit" class="btn btn-primary mt-4 mb-4 ml-5 mr-5 align-middle"><h5><b>Update Customer</b></h5></button>
+	</form>
+<center><h4>{{message}}</h4></center>
+</div>

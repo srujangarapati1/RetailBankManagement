@@ -1,0 +1,57 @@
+<div  ng-controller="withdrawController">
+
+<!-- <form ng-submit="withdraw()">
+<table border="0" >
+
+			<tr>
+               		<td>Account Id</td>
+               		<td><input type="text" ng-model="transForm.accId" required/></td>
+            </tr>
+            <tr>
+               		<td>Amount</td>
+               		<td><input type="text" ng-model="transForm.amount" required/></td>
+            </tr>
+		<tr>
+               		<td colspan="2">
+                  <input type="submit" value="Submit" class="blue-button" />
+               </td>
+         </tr>
+
+</table>
+</form> -->
+	<form name="myForm" ng-submit="withdraw()"
+		class="card container-fluid shadow mt-5"
+		style="width: 50%; background-color: aliceblue">
+		<h2 class="text-center card-header">Withdraw</h2>
+
+		<div class="form-row mt-5">
+			<div class="form-group col-md-auto mt-3 ml-auto">
+				<label for="inputNumber">Account Id</label>
+			</div>
+			<div class="form-group col-md-auto mr-auto">
+				<input type="text" class="form-control" id="inputNumaber"
+					ng-model="transForm.accId" required><br>
+			</div>
+		</div>
+		<div class="form-row mt-4  ml-4 ">
+			<div class="form-group col-md-auto mt-3 ml-auto">
+				<label for="inputNumber">Amount</label>
+			</div>
+			<div class="form-group col-md-auto mr-auto">
+				<div class="input-group ">
+					<div class="input-group-prepend">
+						<span class="input-group-text"><b>$</b></span> <input type="text"
+							ng-model="transForm.amount" class="form-control"
+							aria-label="Amount (to the nearest dollar)" required>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-7 ml-auto">
+				<button type="submit"
+					class="btn btn-primary mb-4 ml-5 mr-5 align-middle">Withdraw</button>
+			</div>
+		</div>
+	</form>
+</div>

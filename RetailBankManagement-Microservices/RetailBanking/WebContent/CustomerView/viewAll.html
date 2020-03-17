@@ -1,0 +1,44 @@
+<div   ng-controller="viewAllController" >
+
+       <table border="1" align="center" class=" table table-striped mt-5" style="width: 70%; background-color: aliceblue">
+<thead>
+         <tr>
+           <th scope="col">SSN Id</th>
+            <th scope="col">Customer Id</th>
+            <th scope="col">Customer Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Mobile No</th>
+            <th scope="col">Address</th>
+            <th scope="col">City</th>
+            <th scope="col">Email Id</th>
+            <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
+         </tr>
+         </thead>
+        <tbody>
+         <tr ng-repeat="customers in customer">
+            <th scope="row">{{customers.ssnId }}</th>
+            <td scope="col"> {{customers.customerId }}</td>
+            <td scope="col"> {{customers.customerName}}</td>
+            <td scope="col">{{customers.age}}</td>
+            <td scope="col">{{customers.gender}}</td>
+            <td scope="col">{{customers.mobile}}</td>
+            <td scope="col">{{customers.address}}</td>
+            <td scope="col">{{customers.city}}</td>
+            <td scope="col">{{customers.gmail}}</td>
+            <td>
+            <a href="#!updateForm" ng-click="editCustomer(customers)" class="btn btn-primary">Edit</a>
+            </td>
+            <td>
+            <a  ng-click="deleteCustomer(customers)" class="btn btn-danger" style="color: white;">Delete</a>
+            </td>
+         </tr>
+            </tbody>
+     </table>
+<center><h4>{{message}}</h4></center>
+</div>
+
+
+
+

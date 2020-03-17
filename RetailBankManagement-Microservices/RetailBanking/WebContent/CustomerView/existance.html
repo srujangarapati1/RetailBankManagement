@@ -1,0 +1,26 @@
+<div  ng-controller="viewByController" >
+<form name="myForm" class="card container-fluid shadow mt-5"
+		style="width: 50%; background-color: aliceblue">
+		<h2 class="text-center card-header">Check Customer</h2>
+		<div class="form-row mt-4">
+			<div class="form-group col-md-auto mt-3 ml-auto">
+				<label for="inputNumber">Customer Id</label>
+			</div>
+			<div class="form-group col-md-auto mr-auto">
+				<input type="number" class="form-control" id="inputName"
+					ng-model="customerForm.customerId" required><br>
+			</div>
+		</div>
+		<div class="form-row">
+		<div class="form-group col-md-7 ml-auto">
+		<a href="#!checkDisplay"  class="center">
+		<button
+				type="submit" ng-click="check(customerForm.customerId)"
+				
+				class="btn btn-primary mb-4 ml-5 mr-5 align-middle">Search</button></a>
+		</div>
+		</div>
+	</form>
+
+<center><h4>{{message}}</h4></center>
+</div>

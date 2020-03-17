@@ -1,0 +1,26 @@
+<div  ng-controller="viewByController" class="center">
+
+<form name="myForm" class="card container-fluid shadow mt-5"
+		style="width: 50%; background-color: aliceblue">
+		<h2 class="text-center card-header">View By Email</h2>
+		<div class="form-row mt-4">
+			<div class="form-group col-md-auto mt-3 ml-auto">
+				<label for="inputEmail4">Email</label>
+			</div>
+			<div class="form-group col-md-auto mr-auto">
+				<input type="email" class="form-control" id="inputEmail4"
+					ng-model="customerForm.gmail" required><br>
+			</div>
+		</div>
+		<div class="form-row">
+		<div class="form-group col-md-7 ml-auto">
+		<a href="#!viewByEmailDisplay"  class="center">
+		<button
+				type="submit" ng-click="viewBy(customerForm.gmail)"
+				
+				class="btn btn-primary mb-4 ml-5 mr-5 align-middle">Search</button></a>
+		</div>
+		</div>
+	</form>
+
+</div>

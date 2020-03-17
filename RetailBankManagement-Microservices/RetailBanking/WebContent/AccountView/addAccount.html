@@ -1,0 +1,72 @@
+<div ng-controller="addAccController">
+	<form ng-submit="addAcc()" class="card container-fluid shadow mt-5"
+		style="width: 40%; background-color: aliceblue">
+		<h2 class="text-center card-header">Add Account</h2>
+		<!-- 		<table border="0"> -->
+		<!-- 			<tr> -->
+		<!-- 				<td>Customer Id</td> -->
+		<!-- 				<td><input type="number" ng-model="accForm.customerId" required /></td> -->
+		<!-- 			</tr> -->
+
+		<!-- 			<tr> -->
+		<!-- 				<td>Account Type</td> -->
+		<!-- 				<td><input type="text" ng-model="accForm.accountType" required /></td> -->
+		<!-- 			</tr> -->
+		<!-- 			<tr> -->
+		<!-- 				<td>Balance</td> -->
+		<!-- 				<td><input type="number" ng-model="accForm.balance" required /></td> -->
+		<!-- 			</tr> -->
+		<!-- 			<tr> -->
+		<!-- 				<td colspan="2"><input type="submit" value="Submit" -->
+		<!-- 					class="blue-button" /></td> -->
+		<!-- 			</tr> -->
+		<!-- 		</table> -->
+		<div class="form-row mt-5">
+			<div class="form-group col-md-auto mt-3 ml-auto">
+				<label for="inputNumber">Customer Id</label>
+			</div>
+			<div class="form-group col-md-auto mr-auto">
+				<input type="text" class="form-control" id="inputName"
+					ng-model="accForm.customerId" required><br>
+			</div>
+		</div>
+		<div class="form-row  ml-3 ">
+			<div class="form-group col-md-auto mt-3 ml-auto">
+				<label for="inputState">Account Type</label>
+			</div>
+			<div class="form-group col-md-auto mr-auto">
+				<select id="inputState" ng-model="accForm.accountType" class="form-control">
+					<option  selected>Choose...</option>
+					<option value="Savings Account">Savings Account Type</option>
+					<option value="Current Account">Current Account Type</option>
+				</select>
+			</div>
+		</div>
+		<div class="form-row mt-4  ml-5 ">
+			<div class="form-group col-md-auto mt-3 ml-auto">
+				<label for="inputNumber">Balance</label>
+			</div>
+			<div class="form-group col-md-auto mr-auto">
+				<div class="input-group ">
+					<div class="input-group-prepend">
+						<span class="input-group-text"><b>$</b></span> <input type="text" ng-model="accForm.balance"
+							class="form-control" aria-label="Amount (to the nearest dollar)">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="form-row mt-3">
+			<div class="form-group col-md-7 ml-auto">
+			
+					<button type="submit" 
+						class="btn btn-primary mb-4 ml-5 mr-5 align-middle"><h5><b>Add Account</b></h5></button>
+			
+			</div>
+		</div>
+	</form>
+	<center>
+		<h4>{{message}}</h4>
+	</center>
+
+</div>
