@@ -10,8 +10,8 @@ import java.sql.Statement;
 public class DatabaseUtil{
 
 	private static final String DRIVERNAME = "oracle.jdbc.driver.OracleDriver";
-	private static final String URL = "jdbc:oracle:thin:@localhost:1521:XE";
-	private static final String PASSWORD ="password";
+	private static final String URL = "jdbc:oracle:thin:@localhost:1521:orcl";
+	private static final String PASSWORD ="System123";
 	private static final String USERNAME ="SYSTEM";
 
 	// get a database connection
